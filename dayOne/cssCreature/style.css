@@ -1,0 +1,167 @@
+body {
+  background-color: rgb(66, 66, 66);
+}
+.wrapper {
+  margin: 5px;
+}
+
+.head {
+  width: 15em;
+  height: 23em;
+  border: solid 1px rgb(51, 255, 0);
+  border-radius: 50% 50% 50% 50%/40% 40% 60% 60%;
+  z-index: 1;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgb(204, 174, 204);
+}
+
+.leftEye {
+  height: 5em;
+  width: 2em;
+  z-index: 2;
+  border: solid 1px black;
+  border-radius: 50%;
+  box-shadow: 1px -1px;
+  position: absolute;
+  top: 1em;
+  left: -8em;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: gray;
+  transform: rotate(-30deg);
+}
+#innerLeftEye {
+  height: 1em;
+  width: 1em;
+  z-index: 3;
+  border: solid 1px white;
+  border-radius: 50%;
+  position: absolute;
+  top: 1em;
+  left: 0.5em;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+}
+
+.rightEye {
+  height: 5em;
+  width: 2em;
+  z-index: 2;
+  border: solid 1px black;
+  border-radius: 50%;
+  box-shadow: -1px -1px;
+  position: absolute;
+  top: 1em;
+  left: 8em;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: gray;
+  transform: rotate(30deg);
+}
+
+#innerRightEye {
+  height: 1em;
+  width: 1em;
+  z-index: 3;
+  border: solid 1px white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3em;
+  left: 0.5em;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+}
+
+.mouth {
+  width: 8em;
+  height: 1em;
+  border: solid 0px black;
+  border-radius: 0 0 45px 45px;
+  margin: auto;
+  z-index: 2;
+  position: absolute;
+  top: 15em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+}
+
+#toothOne {
+  position: absolute;
+  left: 1em;
+  height: 0.7em;
+  width: 0.5em;
+  background: white;
+}
+
+#toothTwo {
+  position: absolute;
+  left: 6.5em;
+  height: 0.7em;
+  width: 0.5em;
+  background: white;
+}
+
+#toothThree {
+  position: absolute;
+  left: 3.5em;
+  bottom: 0;
+  height: 0.7em;
+  width: 0.5em;
+  background: white;
+}
+
+/*animation learned from w3 schools website */
+.aura {
+  background-color: red;
+  animation-name: iCanFeelYou;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  height: 30em;
+  width: 25em;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  margin: auto;
+
+  border-radius: 50% 50% 50% 50%/40% 40% 60% 60%;
+  box-shadow: 5px 5px 50px black;
+}
+
+@keyframes iCanFeelYou {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+  }
+  33% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: green;
+  }
+  65% {
+    background-color: blue;
+  }
+  83% {
+    background-color: indigo;
+  }
+  100% {
+    background-color: violet;
+  }
+}

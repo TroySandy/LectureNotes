@@ -1,0 +1,27 @@
+table {
+  border: solid 5px black;
+  background-color: lightskyblue;
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 5px 10px 10px 10px;
+  border: solid 1px grey;
+  box-shadow: -1px -1px black;
+}
+
+.movie {
+  font-style: italic;
+}
+
+#align {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}

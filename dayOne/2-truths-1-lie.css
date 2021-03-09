@@ -1,0 +1,32 @@
+h1 {
+  color: lightgreen;
+  text-align: center;
+}
+
+h3 {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+/*  (id>class>html tag)  Loading orders, the last one loaded will be displayed */
+#parentBorder {
+  border: solid 10px black;
+  border-radius: 10px;
+  background-color: grey;
+}
+
+.childBorder {
+  margin: 5px;
+  padding: 10px;
+  border: solid 5px orange;
+  border-radius: 25px 10px;
+  background-color: lightgrey;
+}
+
+#align {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}

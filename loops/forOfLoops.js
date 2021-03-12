@@ -4,20 +4,24 @@
     -for of loops iterate over the values of an iterable object
 */
 
-let catArray = ["tabby", "british shorthair", "burmese", "maine coon", "rag doll"];
+// let catArray = ["tabby", "british shorthair", "burmese", "maine coon", "rag doll"];
 
-for (cat of catArray) {
-    console.log(cat);
-}
-//cannot use for of on objects, only arrays
-let student = {
-    name: "Peter",
-    awesome: true,
-    degree: "JavaScript",
-    week: 1
-}
+// for (cat of catArray) {
+//     console.log(cat);
+// }
+// //cannot use for of on objects, only arrays
+// let student = {
+//     name: "Peter",
+//     awesome: true,
+//     degree: "JavaScript",
+//     week: 1
+// }
 
-for (item of student) {
-    console.log(item); 
-}
+// for (item of student) {
+//     console.log(item); 
+// }
 
+// function sum (a + b) {
+//     return a + b
+// }
+// console.log(sum(1, 2, 3, 4));

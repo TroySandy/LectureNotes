@@ -27,8 +27,10 @@ let movies = ["Ace Ventura", "Brink", "Lion King"];
 movies.forEach(movieItem => console.log(movieItem));
 console.log("forEach:", movies);
 
-movies.push("Star Wars")
+movies.push("Star Wars", "Star Trek", "The Office")
 console.log("Push:", movies);
 
-movies.splice(1,1,"the Hobbit");
+movies.splice(5,1,"The Hobbit");
 console.log("Splice:", movies);
+
+movies.forEach(movieItem => console.log(movieItem));

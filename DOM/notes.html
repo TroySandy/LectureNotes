@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <!-- <script type="text/javascript">
+      /*All of our JavaScript code will go here*/
+      var x = 10;
+      console.log(x);
+    </script> -->
+    <p id="testParagraph">sample text</p>
+    <!-- <script type="text/javascript">
+      /* All of our JavaScript code will go here */
+    //   document.getElementById("testParagraph").style.color = "blue";
+    document.getElementById('testParagraph').style.color = 'blue';
+console.log(document.getElementById('testParagraph').style.color);
+    </script> -->
+    <!-- We used the getElementById method to pick which element we wanted to style. You might wonder... so, will we have to put IDs on EVERY element we want to interact with?
+
+Of course not! That would be painfully tedious... There are other ways we can select elements. Two such ways include:
+
+document.getElementsByTagName("p");
+document.getElementsByClassName("classHere");
+
+The 2 most common ways to select an element are:
+
+document.getElementById("idHere")
+document.querySelectorAll("p.classNameHere")
+
+
+We already gave an example of the first one, now let's look at the 2nd one. As you can probably guess, the querySelectorAll uses CSS-style selectors. This also returns a pseudo-array-like list of matching elements called a Node List.
+
+Let's do a quick example with that too: -->
+    <p id="testParagraph">sample text</p>
+    <p class="sampleClass">This paragraph has a class of 'sampleClass'</p>
+
+    <script type="text/javascript">
+      /* All of our JavaScript code will go here */
+      console.log(document.querySelectorAll("p.sampleClass"));
+      document.querySelectorAll("p.sampleClass")[0].innerText =
+        "My text was changed!";
+      document.querySelectorAll("p.sampleClass")[0].innerHTML =
+        "<span>I am a whole new element!</span>"; //set to blank to remove an element
+    </script>
+
+<button id="clickThisButton">I want to be clicked</button>
+
+    <script type="text/javascript">
+        /* All of our JavaScript code will go here */
+        // document.getElementById('clickThisButton').addEventListener('click', () => {
+        //     console.log('I was clicked!');
+            document.getElementById('clickThisButton').addEventListener('click', (details) => {
+    console.log(details);
+    details.target.style.backgroundColor = 'red';
+        });
+    </script>
+
+
+<label for="nameInput">Enter Your Name:</label>
+    <input type="text" id="nameInput" placeholder="John Smith" />
+
+    <p>Welcome!</p>
+    <p>No name has been entered</p>
+
+    <script type="text/javascript">
+/* All of our JavaScript code will go here */
+document.getElementById('nameInput').addEventListener('keyup', (event) => {
+    // console.log(event.target.value);
+    // console.log(document.getElementsByTagName("p"));
+    // document.getElementsByTagName("p")[1].innerText = `Everyone please welcome ${event.target.value} to the stage.`;
+    if (event.target.value === '') {
+            document.getElementsByTagName("p")[1].innerText = `No name has been entered`;
+        } else {
+            document.getElementsByTagName("p")[1].innerText = `Everyone please welcome ${event.target.value} to the stage.`;
+        }
+        });
+        
+    </script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

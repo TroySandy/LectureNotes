@@ -7,7 +7,7 @@
     -undefined
     -NaN (not a number)
 
-- This means that when the JAvaScript is expecting a boolean and it i s given one of the values above, it will always evaluate to "falsy"
+- This means that when the JavaScript is expecting a boolean and it is given one of the values above, it will always evaluate to "falsy"
 */
 
 let isOn = true;

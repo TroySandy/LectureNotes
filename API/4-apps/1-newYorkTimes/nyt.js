@@ -87,10 +87,14 @@ function displayResults(json) {
   let articles = json.response.docs;
 
   if (articles.length === 10) {
-    nav.style.display = "block"; //shows nav display if more than 10 items are returned
-    } else {
-    nav.style.display = "none"; //hides the nav display if less than 10 items found
+    nav.style.display = "block";
+    // previousBtn.style.display = "none"; 
+    // } else if (articles.length === 10){
+    // nav.style.display = "block";
+  } else {
+    nav.style.display = "none"
   }
+  
 
   console.log("Display Results:", articles);
 

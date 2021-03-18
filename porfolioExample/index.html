@@ -27,32 +27,213 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-<!-- NavBar from bootstraps-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+    <!-- NavBar from bootstraps-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Another Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="true" href="#">Active</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#" tabindex="-1">Another Link</a>
           </li>
         </ul>
       </div>
+      <div class="card-body">
+        <h5 class="card-title">Cards</h5>
+        <p class="card-text">Welcome to my example portfolio!</p>
+        <a href="#" class="btn btn-primary">Lets go on an adventure</a>
+      </div>
     </div>
-  </nav>
 
+    <!-- Projects -->
+    <!-- Although we are not using a Bootstrap component for our projects section, we are using Bootstrap's grid system to help with the layout of our webpage. In the 'Grid' section located in the left sidebar, there is documentation explaining how to implement Bootstrap's grid system within our webpage. -->
+    <!-- Bootstap's grid system has 12 columns that span the horizontal width of our viewport. By using the container, row, and col classes, we can use the grid system to evenely space out how many columns we want. In our code below, we have three div's that are each taking up 4 columns of the alloted 12 - which means they should be evenly spaced, taking up 4 columns each. -->
+    <!-- Below we have a container, with a nested row, and 3 nested columns. The container is simply just a container for our content that we want to display in our grid. The row will align our columns in a horizontal row. And the columns are were we store our information.  -->
+
+    <section>
+      <h1 id="projectsTitle">Projects</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            vero eius nemo error eum tempore ab nam. Saepe ducimus distinctio
+            deleniti qui quia. Est eaque et, distinctio fuga sunt dolore.
+          </div>
+          <div class="col-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+            blanditiis soluta distinctio. Ut atque quisquam quis odit
+            consectetur itaque nisi, consequuntur temporibus, harum excepturi
+            perferendis tempore? Dolorum nisi tempore quaerat!
+          </div>
+          <div class="col-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+            quasi deleniti quis repudiandae non, quod voluptatem explicabo
+            eligendi? Aliquid, facilis? Accusantium alias soluta, expedita ab
+            esse voluptas eos ducimus! Reiciendis.
+          </div>
+          <div class="col-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iste
+            at rerum ut alias nobis commodi laboriosam ad soluta ea culpa ullam
+            ratione pariatur, error nisi unde nihil sed id.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About (JUMBOTRON)-->
+    <section>
+      <div class="bg-light p-5 rounded-lg m-3">
+        <h1 class="display-4" id="aboutTitle">
+          Hello, world! I am a JUMBOTRON
+        </h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde
+          mollitia nulla! Ducimus vel facere, ea fugit sint iusto nihil
+          voluptates mollitia, ad vero velit tempore sequi rerum harum ipsa?
+          Quibusdam totam odit temporibus non qui! Cum accusamus aliquid,
+          delectus nemo dicta molestias sapiente at repellendus, error nobis,
+          veritatis soluta tenetur. Fugit commodi quae libero cupiditate, sit
+          excepturi inventore quasi. Ullam libero qui explicabo minus laboriosam
+          eum maxime, sit odio illum dolorem. Numquam nostrum aspernatur
+          laboriosam ad! Animi autem doloribus vero non! Neque non facilis nihil
+          debitis, vero odio pariatur! Corrupti, id, ipsum et exercitationem est
+          totam suscipit illo, cupiditate officia nulla optio doloremque rerum
+          iste ab nam minus. Incidunt, consequuntur repudiandae. Quod
+          repudiandae, laborum dignissimos consequuntur excepturi perferendis
+          magnam.
+        </p>
+        <hr class="my-4" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat
+          recusandae maiores qui unde repellendus itaque dicta quis doloribus
+          veritatis obcaecati dolorum, ipsa quibusdam laborum laudantium sint
+          nihil animi nulla. Libero consequuntur nisi eos delectus cum quis nemo
+          minus. Enim odio saepe rem minima non pariatur provident iure dolore
+          exercitationem dolorum, minus molestiae libero, deserunt ducimus. Modi
+          optio est natus? Eum natus, reprehenderit fugiat neque, ipsa
+          voluptatem quo hic maxime magni consequuntur reiciendis quasi
+          repudiandae? Quisquam ex laudantium commodi quibusdam quos unde odio,
+          dicta totam aperiam voluptatum possimus consequuntur ipsam!
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <!-- Our contact form is powered by formspree. Formspree is a free email service for HTML forms, that re-routes any form submissions to the provided email address (should be your personal email). This allows us to use form submission on our portfolios without using any JavaScript to post/route the form to us - formspree does that for us. -->
+    <section id="contact">
+        <div class="container">
+          <br />
+          <br />
+          <h2 class="text-center text-uppercase">Contact Me</h2>
+          <div class="row">
+            <div class="col-12">
+              <form
+                action="https://formspree.io/f/mrgonvvr"
+                method="POST"
+              >
+                <div class="control-group">
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      id="name"
+                      required
+                      data-validation-required-message="Please enter your name"
+                      name="name"
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="form-group">
+                    <label>Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      id="email"
+                      required
+                      data-validation-required-message="Please enter your email"
+                      name="_replyto"
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      rows="7"
+                      placeholder="Your Message"
+                      id="message"
+                      required
+                      data-validation-required-message="Please leave a message"
+                      name="message"
+                    ></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div id="success"></div>
+                  <button type="submit" class="btn btn-lg btn-black">
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"

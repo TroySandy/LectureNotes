@@ -112,3 +112,18 @@ class Dog extends Animal {
 let Georgie = new Dog ("Georgie", "Bearded Collie");
 Georgie.eat();
 Georgie.play();
+
+
+
+
+function setVariables() {
+  let store = document.getElementById("store").value;
+  let product = document.getElementById("store").value;
+  let quantity = document.getElementById("store").value;
+  let newText = document.getElementByClass("result").value;
+  
+  console.log(`I went to ${store} to buy ${quantity} ${product}`);
+  
+  
+  newText.innerHTML = `I went to ${store} to buy ${quantity} ${product}`;
+}
